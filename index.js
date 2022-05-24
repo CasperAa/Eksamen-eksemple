@@ -26,6 +26,7 @@ window.addEventListener("load", async () => {
 
       .on("/candidates", (match) => {
       renderTemplate(templateCandidate, "content")
+      router.updatePageLinks()
       candidateHandlers()
 
     })
